@@ -8,9 +8,4 @@ import { Component } from "@angular/core";
 export class AppComponent
 {
     title = "timeline-with-angular";
-
-    onClick()
-    {
-        alert("Hello world!");
-    }
 }
