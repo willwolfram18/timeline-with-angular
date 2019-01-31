@@ -1,3 +1,11 @@
 .d-flex {
     display: flex;
 }
+
+.container {
+    height: 500px;
+
+    .scroll-zone {
+        overflow: auto;
+    }
+}

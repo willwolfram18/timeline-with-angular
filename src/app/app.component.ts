@@ -20,6 +20,7 @@ export class AppComponent
     constructor() {
         for (let i = 0; i < this.numEvents; i++) {
             this.events.push({
+                key: i,
                 description: `Description ${i}`,
                 title: `Title ${i}`,
                 timestamp: this.randomDate(
@@ -31,16 +32,13 @@ export class AppComponent
         this.events.sort((e1, e2) => e2.timestamp.getTime() - e1.timestamp.getTime());
     }
 
-    get timestamps() {
-        return this.events.map(e => e.timestamp);
-    }
-
     randomDate(start: Date, end: Date) {
         return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
     }
 }
 
 interface TimelineEvent {
+    key: number;
     timestamp: Date;
     title: string;
     description: string;

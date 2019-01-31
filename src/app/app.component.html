@@ -1,9 +1,9 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="d-flex">
+<div class="d-flex container ">
     <div>
-        <app-timeline [events]="timestamps" [startOfTimeline]="today" [endOfTimeline]="yesterday"></app-timeline>
+        <app-timeline [events]="events" [startOfTimeline]="today" [endOfTimeline]="yesterday"></app-timeline>
     </div>
-    <div style="flex: 1; padding: 0 15px;">
+    <div class="scroll-zone" style="flex: 1; padding: 0 15px;">
         <h2>
             Other content to go here.
         </h2>

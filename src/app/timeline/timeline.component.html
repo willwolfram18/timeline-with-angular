@@ -1,3 +1,3 @@
 <div class="timeline vertical">
-    <div class="event" *ngFor="let event of events" [style.top]="computePosition(event)"></div>
+    <div class="event" *ngFor="let event of events" [style.top]="computePosition(event.timestamp)"></div>
 </div>

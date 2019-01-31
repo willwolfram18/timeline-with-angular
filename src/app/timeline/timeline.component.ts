@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from "@angular/core";
 export class TimelineComponent implements OnInit
 {
     @Input()
-    events: Date[] | null = null;
+    events: { key: any, timestamp: Date }[] | null = null;
 
     @Input()
     endOfTimeline: Date | null = null;
